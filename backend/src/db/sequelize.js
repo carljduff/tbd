@@ -1,18 +1,18 @@
-// import { Sequelize } from "sequelize";
-// import dotenv from "dotenv";
+import { Sequelize } from "sequelize";
+import dotenv from "dotenv";
 
-// dotenv.config();
+dotenv.config();
 
-// const sequlize = new Sequelize(
-//     process.env.PGDATABASE,
-//     process.env.PGUSER,
-//     process.env.PGPASSWORD,
-//     {
-//         host: process.env.PGHOST,
-//         dialect: "postgres",
-//         port: process.env.PGPORT,
-//         logging: false,
-//     }
-// );
+const sequlize = new Sequelize(
+    process.env.PGDATABASE,
+    process.env.PGUSER,
+    process.env.PGPASSWORD,
+    {
+        host: process.env.PGHOST,
+        dialect: "postgres",
+        port: process.env.PGPORT,
+        logging: false,
+    }
+);
 
-// export default sequlize;
+export default sequlize;
